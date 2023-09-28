@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 5rem;
+    background-color: rgba(204, 148, 148, 0.466);
+    
+    }
+    .logo i{
+        font-size: 2.3rem;
+        margin-right: 1rem;
+    }
+    .fa-coffee{
+        color: rgb(114, 1, 1);
+    }
+    .logo span{
+font-size: 2rem;
+color: rgb(58, 11, 11);
+font-family: 'Dancing Script', cursive;
+    }
+    .navbar{
+        margin-right: 5rem;
+    }
+    .navbar a{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: rgb(85, 56, 56);
+        position: relative;
+        font-family: 'Dancing Script', cursive;
+    }
+    .navbar a::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 0.2rem;
+        left: 0;
+        bottom: -0.2rem;
+        background: red;
+        transition: all .3s ease-in;
+    }
+    .navbar a:hover{
+        color: red;
+        letter-spacing: 0.2rem;
+    }
+    .navbar a:hover::after{
+        width: 100%;
+      
+    }
+    #menu-icon{
+font-size: 2rem;
+display: none;
+    }
+    @media(max-width:600px){
+        .container{
+
+            width: 85%;
+            padding: 1.7rem 1.7rem;
+
+        }
+#menu-icon{
+    display: block;
+   margin-left: 1.2rem;
+}
+.navbar{
+        position:absolute;
+        top: 17%;
+        right: 100%;
+        width: 50%;
+        /* height: 100vh; */
+        background: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 0.3rem;
+        transition: all .5s ease;
+    
+}
+.navbar a{
+    display: block;
+    margin: 0.5rem 2rem;
+    padding: 0.5rem 0.7rem;
+    transition: all .5s ease;
+    background-color: rgb(48, 221, 221);
+    border: 2px solid rgb(36, 36, 46);
+    text-align: center;
+}
+.navbar.open{
+    right: -23%;
+}
+.logo span{
+    font-size: 1rem;
+}
+    }
+    .section{
+       background-image: url('https://townsquare.media/site/543/files/2018/09/Coffee.jpg?w=1200&h=0&zc=1&s=0&a=t&q=89');
+        height: 90.2vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
+    .container-1{
+      padding-left: 9rem;
+       padding-top: 7rem;
+    }
+    .container-1 h1{
+        font-size: 5rem;
+        color: rgb(206, 204, 204);
+        font-family: 'Dancing Script', cursive;
+    }
+   .container-1 p{
+    font-size: 3rem;
+    width: 50%;
+    color: cornsilk;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 2rem;
+   }
+   .container-1 a{
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+   font-size: 1.9rem;
+   border-radius: 2rem;
+   margin-left: 6rem;
+   }
+   .container-1 a:hover{
+    background-color: transparent;
+    border: 2px solid brown;
+    letter-spacing: 0.2rem;
+   }
+   @media (max-width:600px){
+.section{
+background-position: cover;
+}
+.container-1 {
+    padding-left: 2.7rem;
+    padding-top:7.7rem;
+   }
+   .container-1 h1{
+font-size: 3rem;
+   }
+   .container-1 p{
+    width: 90%;
+    font-size: 2rem;
+   }
+   .container-1 a{
+    margin-left: 1rem;
+   }
+}
+.services{
+    background-color: rgb(110, 67, 67);
+    padding: 1rem 0rem;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18rem,auto));
+    margin: 1rem 2rem;
+    gap: 4.5rem;
+}
+.box{
+text-align: center;
+position: relative;
+}
+.box img{
+    width: 100%;
+    height: 20rem;
+    border-radius: 1rem;
+}
+h6{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: white;
+    background-color: orange;
+    width: 3rem ;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+    font-size: 1.4rem;
+}
+h5{
+    font-size: 1.6rem;
+    color: white;
+}
+.box i{
+    float: right;
+    margin-right: 1rem;
+    
+}
+.box i:hover{
+    color: red;
+}
+.contact{
+    padding: 1rem 2rem;
+    background-color: burlywood;
+}
+.box-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 2rem;
+}
+.box-2{
+    padding: 1rem 2rem;
+}
+.box-2 i{
+    font-size: 2.9rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.box-2 span{
+    font-size: 2.4rem;
+    font-family: 'Dancing Script', cursive;
+}
+.box-2 h3{
+    font-size: 2.2rem;
+    color: rgb(87, 14, 14);
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 1.2rem;
+}
+.box-2 p{
+    font-size: 1.4rem;
+    font-family: 'Dancing Script', cursive;
+}
+/* .box-2 .icon-box{
+    display: grid;
+    grid-template-rows: auto ;
+} */
+.icon-box i{
+    font-size: 1.5rem;
+    color: black;
+}
+.icon-box h3{
+    color: black;
+    font-size: 1.5rem;
+}
+@media(max-width:600px){
+    .contact{
+    padding: 1.7rem 0.7rem;
+    }
+    .box-1{
+        gap: 0.5rem;
+        margin: 1rem 0rem;
+    }
+    .box-2 span{
+        font-size:1.9rem ;
+    }
+    .box-2 p{
+        font-size: 1.2rem;
+    }
+}
